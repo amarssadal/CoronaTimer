@@ -1,0 +1,64 @@
+/*///////// BODY*/
+body {
+    background-color: red;
+    color: white;
+    font-family: 'Krona One';
+    size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*///////// WRAPPER */
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+
+/*///////// MAINS */
+.main {
+    width: 50vw;
+    min-width: 500px;
+    height: auto;
+}
+
+
+/*///////// SUBS */
+.main .textBox {
+    font-size: 1rem;
+}
+
+.main .coronaBox, .main .lockBox {
+    font-size: 1.5rem;
+    text-shadow: 0px 6px 1px rgba(0,0,0, .4);
+    display: grid;
+    grid-template-columns:
+        minmax(50px, 10%)
+        minmax(20px, 5%)
+        minmax(50px, 10%)
+        minmax(20px, 5%)
+        minmax(50px, 10%)
+        minmax(20px, 5%)
+        minmax(50px, 10%)
+        minmax(20px, 5%)
+        minmax(50px, 10%)
+        minmax(20px, 5%)
+        minmax(50px, 10%)
+        minmax(20px, 5%)
+        minmax(70px, 10%);    
+}
+
+.main .coronaBox .sub,  .main .lockBox .sub{
+    font-size: .5rem;
+    text-shadow: none;
+    text-align: center;
+}
+
+.main .coronaBox .time,  .main .lockBox .time {
+    display: inline-block;
+    text-align: center;
+}
